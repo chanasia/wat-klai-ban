@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap" rel="stylesheet">
+  <title>วัดไทยใกล้บ้านฉัน</title>
+  <style>
+    :root {
+      --bg-color: #FAF8F1;
+      --font-hover-color: #FAEAB1;
+      --header-color: #e5b97341;
+      --header-default-color: #E5BA73;
+      --font-color: #664822;
+      --font-content-color: #C58940;
+      --kanit-font: 'Kanit', sans-serif;
+      --ibm-font: 'IBM Plex Sans Thai', sans-serif;
+    }
+
+    header ul .nav-link {
+      color: var(--bg-color) !important;
+      font-family: var(--ibm-font);
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: all .2s ease-in-out;
+    }
+
+    header ul .nav-link:hover {
+      color: var(--header-default-color) !important;
+    }
+
+    header ul.default {
+      background-color: var(--header-default-color) !important;
+      top: 0 !important;
+      box-shadow: 0px 11px 54px -15px rgba(0,0,0,0.23);
+    }
+
+    header ul.default .nav-link {
+      color: var(--font-color) !important;
+      font-family: var(--ibm-font);
+    }
+
+    header ul.default .nav-link:hover {
+      color: var(--font-hover-color) !important;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 90vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('img/wat2/wad17.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    .hero-image.image2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("img/wat2/4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body style="background-color: var(--bg-color);">
+  <header style="position: relative;">
+    <ul class="nav nav-pills justify-content-center"
+      style="background-color: var(--header-color); transition: all .2s ease-in-out; position: fixed; z-index: 999; width: 100%; padding: .3rem; top: 20px;">
+      <li class="nav-item">
+        <a class="nav-link" href="#">หน้าหลัก</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#wat1">วัดสร้อยทอง</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#wat2">วัดเล่งเน่ยยี่ 2</a>
+      </li>
+    </ul>
+  </header>
+
+  <section id="home" style="background-color: var(--font-content-color);">
+    <div class="hero-image">
+      <h1 style="font-family: var(--kanit-font);color: var(--bg-color);">วัดไทยใกล้บ้านฉัน</h1>
+    </div>
+  </section>
+  <address id="wat1" class="py-3"></address>
+  <section>
+    <div class="container mx-auto row align-items-center mb-3">
+      <div class="col-lg-7 order-lg-1 order-2">
+        <div id="nexts" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#nexts" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner" style="background-color: black; border-radius: 10px;">
+            <div class="carousel-item active ratio ratio-16x9">
+              <img src="img/wat1/1.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/2.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/3.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/4.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/5.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/6.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat1/7.jpg" style="object-fit: contain;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#nexts" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#nexts" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-5 order-lg-2 order-1">
+        <h1 class="font-weight-light text-center text-lg-start" style="color: #E5BA73; font-family: var(--kanit-font);">
+          วัดสร้อยทอง</h1>
+        <p style="color: #C58940; font-family: var(--kanit-font);">วัดสร้อยทอง หรือ วัดสร้อยทองพระอารามหลวง
+          เป็นพระอารามหลวงชั้นตรีชนิดสามัญ ตั้งอยู่ริมถนนประชาราษฎร์ สาย 1 เขตบางซื่อ กรุงเทพมหานคร เดิมชื่อ
+          "วัดซ่อนทอง" เป็นวัดเก่าแก่ที่สร้างขึ้นประมาณปี พ.ศ. 2394 ริมแม่น้ำเจ้าพระยา</p>
+      </div>
+    </div>
+
+    <div class="container mx-auto row justify-content-start">
+      <div class="col-lg-4 mb-2">
+        <div class="card h-100">
+          <div class="card-body" style="background-color: #FAEAB1; font-family: var(--kanit-font);">
+            <h2 class="card-title text-center text-lg-start" style="color: #E5BA73;">ส่วนที่ 1</h2>
+            <p class="card-text" style="color: #C58940; font-family: var(--kanit-font);">วัดสร้อยทอง
+              ไม่ปรากฏนามและประวัติของผู้สร้าง แต่มีข้อสันนิษฐานว่าคงเป็นผู้ที่สืบเชื้อสายมาจาก เจ้าพระยาศรีพิพัฒน์ (แพ
+              บุนนาค) ภายในวัดมีปูชนียวัตถุที่สำคัญคือ พระพุทธรูปหล่อด้วยโลหะทองเหลือง นามว่า หลวงพ่อเหลือ
+              สร้างจากโลหะที่เหลือจากการหล่อพระประธาน ในปี พ.ศ. 2445 ภายในเกศบรรจุพระบรมสารีริกธาตุ ของพระอรหันต์ 5
+              พระองค์</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 mb-2">
+        <div class="card h-100">
+          <div class="card-body" style="background-color: #FAEAB1;">
+            <h2 class="card-title text-center text-xl-start" style="color: #E5BA73; font-family: var(--kanit-font);">
+              ส่วนที่ 2</h2>
+            <p class="card-text" style="color: #C58940; font-family: var(--kanit-font);">ในปี พ.ศ. 2445–2447
+              วัดซึ่งในขณะนั้นมี หลวงปู่เบี้ยว เป็นเจ้าอาวาสวัดได้มีการบูรณะปฏิสังขรณ์ครั้งใหญ่ มีประชาชนชาวไทยและชาวญวน
+              เป็นกำลังสำคัญในการบูรณะช่วงเวลาดังกล่าว โดยใช้งบประมาณ 10,000 บาท, ในวันที่ 2 มกราคม พ.ศ. 2488
+              ในช่วงสงครามโลกครั้งที่ 2 สะพานพระราม 6 ได้ถูกทิ้งระเบิดลงโดยฝ่ายสัมพันธมิตร โดยมีระเบิดจำนวน 14 ลูก
+              ตกใส่บริเวณวัดสร้อยทองได้รับความเสียหายอย่างมหาศาล มีสิ่งที่เหลือรอดพ้นจากระเบิดเพียงแค่
+              พระพุทธรูปหลวงพ่อเหลือ หอระฆังและเจดีย์ริมคลองบางซ่อน เท่านั้น</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 mb-2">
+        <div class="card h-100">
+          <div class="card-body" style="background-color: #FAEAB1;">
+            <h2 class="card-title text-center text-xl-start" style="color: #E5BA73; font-family: var(--kanit-font);">
+              ส่วนที่ 3</h2>
+            <p class="card-text" style="color: #C58940; font-family: var(--kanit-font);">ในวันที่ 13 เมษายน พ.ศ. 2545
+              วัดสร้อยทอง ได้รับการยกฐานะจากวัดราษฎรเป็นพระอารามหลวงชั้นตรี ชนิดสามัญ
+              ซึ่งได้ประกาศลงราชกิจจานุเบกษาในวันที่ 18 กรกฎาคม ปีเดียวกัน ปัจจุบันวัดมีพื้นที่รวม 15 ไร่ 3 งาน 78
+              ตารางวา</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3 py-5" style="background-color: #E5BA73;">
+      <div class="container mx-auto">
+        <div>
+          <div class="text-center" style="font-family: var(--kanit-font); color: var(--bg-color);">
+            <h1>บรรยากาศของวัดสร้อยทอง</h1>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-2" style="max-width: 750px; width: 100%;">
+          <div class="video-container">
+            <iframe src="img/wat1/Vidio.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <address class="pt-3" id="wat2"></address>
+  <section>
+    <div class="row container mx-auto">
+      <div class="col-xl-6 order-lg-1 order-2 my-auto">
+        <div id="nexts2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#nexts2" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#nexts2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nexts2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#nexts2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#nexts2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner" style="background-color: black; border-radius: 10px;">
+            <div class="carousel-item active ratio ratio-16x9">
+              <img src="img/wat2/1.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat2/2.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat2/3.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat2/4.jpg" style="object-fit: contain;">
+            </div>
+            <div class="carousel-item ratio ratio-16x9">
+              <img src="img/wat2/7.jpg" style="object-fit: contain;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#nexts2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#nexts2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-xl-6 order-lg-2 order-1">
+        <h1 class="font-weight-light text-center text-xl-start" style="color: #E5BA73; font-family: var(--kanit-font);">
+          วัดเล่งเน่ยยี่ 2</h1>
+        <p class="text-center text-xl-start" style="color: #C58940; font-family: var(--kanit-font);">ตั้งอยู่ที่ ถนนบางกรวย-ไทรน้อย ตำบลโสนลอย อำเภอบางบัวทอง สร้างตามแบบสถาปัตยกรรมจีนที่สวยงามมาก วัดบรมราชากาญจนาภิเษกอนุสรณ์หรือวัดเล่งเน่ยยี่ 2 จัดสร้างขึ้น เพื่อเฉลิมพระเกียรติพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช เนื่องในโอกาสงานฉลองสิริราชสมบัติครบ 50 ปีใน พ.ศ. 2539 เดิมเป็นโรงเจขนาดเล็กบนพื้นที่ประมาณ 2 ไร่ต่อมาคณะสงฆ์จีนนิกายแห่งประเทศไทย เปิดให้พุทธบริษัทไทย-จีน ได้ร่วมบุญจัดสร้างวัดขึ้น เพื่อถวายเป็นพระราชกุศลในโอกาสดังกล่าวพระบาทสมเด็จพระเจ้าอยู่หัวภูมิพลอดุลยเดชมีพระบรมราชานุญาต ในการจัดสร้างวัดแห่งนี้และทรงพระกรุณาโปรดเกล้าฯ พระราชทานนามว่า "วัดบรมราชากาญจนาภิเษกอนุสรณ์คณะสงฆ์จีนนิกายรังสรรค์" วัดแห่งนี้ใช้เวลาในการสร้างกว่า 12 ปี จึงเสร็จสมบูรณ์ภายในบริเวณวัดประกอบด้วยวิหารต่าง ๆ ที่มีรูปแบบสถาปัตยกรรมตามแนวปรัชญาและคติธรรมทางพระพุทธศาสนาจีน นิกายฝ่ายมหายานประกอบด้วยวิหารพระกวนอิมโพธิสัตว์ วิหารหมื่นพุทธเจ้า วิหารบูรพาจารย์ ห้องปฏิบัติธรรมที่พำนักสงฆ์และโรงเรียนพระปริยัติธรรม นอกจากนี้ในทุกเทศกาลที่เกี่ยวข้องกับความเชื่อตามวัฒนธรรมของชาวไทยเชื้อสายจีน เช่น วันตรุษจีนเทศกาลถือศีลกินเจวัดแห่งนี้ จะมีผู้คนมาร่วมทำบุญตามประเพณีความเชื่อจำนวนมาก เปิดให้เข้าชมทุกวันตั้งแต่เวลา 8.00-16.30 น.</p>
+      </div>
+    </div>
+    <div class="mt-3 py-5" style="background: rgba(0, 0, 0, 0.5) url('img/wat2/7.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-blend-mode: overlay;">
+      <div class="row container mx-auto">
+        <div class="col-xl-7 my-auto order-2 order-xl-1">
+          <h1 class="font-weight-light text-center text-xl-start" style="color: var(--bg-color); font-family: var(--kanit-font);">
+            เจ้าอาวาสวัดเล่งเน่ยยี่ 2</h1>
+          <p class="text-center text-xl-start" style="color: var(--bg-color); font-family: var(--kanit-font);">หลวงจีนธรรมรัตจีนประจักษ์ หรือหลวงพ่อเย็นงี้(ซือหูเย็นงี้) ท่านเป็นเจ้าอาวาสวัดทิพยวารีย่านบ้านหม้อ เขตพระนครตั้งแต่ปี 2543 ปัจจุบันหลวงพ่อเย็นงี้รักษาการเจ้าอาวาสวัดจีนดังในเมืองไทยถึง 2 วัดคือ วัดมังกรกมลาวาส หรือวัดเล่งเน่ยยี่ เยาวราช และวัดบรมราชากาญจนาภิเษกอนุสรณ์ หรือวัดเล่งเน่ยยี่ 2 บางบัวทอง หลวงพ่อเย็นงี้หรือซือหูเย็นงี้ ไปรักษาการณ์เจ้าอาวาสวัดเล่งเน่ยยี่ 2 ตั้งแต่ปี 2558 ปัจจุบันอายุ 60 ปี ท่านมีโครงการสร้างพระมหารัตนเจดีย์เป็นพุทธบูชาและสร้างวิทยาลัยสงฆ์จีนนิกายสนองปณิธานพระคณาจารย์จีนธรรมปัญญาจริยาภรณ์ (หลวงพ่อเย็นเซียวมหาเถระ) ผู้สถาปนาตั้งวัดเล่งเน่ยยี่ 2 โดยมีกำหนดการจัดพิธีเททองหล่อพระพุทธบรมราชาธิคุณเป็นพระพุทธปติมากรหน้าตัก 29 นิ้ว น้อมถวายพระราชกุศลแด่พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช รัชกาลที่ 9 และเทิดพระเกียรติสมเด็จพระเจ้าอยู่หัวมหาวชิราลงกรณ บดินทรเทพยวรางกูร รัชกาลที่ 10 กำหนดเททองวันที่ 25 มีนาคม 2560 และขนาดหน้าตัก 9 นิ้วให้พุทธศาสนิกชนได้บูชา</p>
+        </div>
+        <div class="col-xl-5 order-1 order-xl-2">
+          <div class="mx-auto d-flex justify-content-center" style="width: 100%;">
+            <img src="img/wat2/monk.jpg" style="max-width: 300px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="py-5" style="background-color: #E5BA73;">
+      <div class="container mx-auto">
+        <div>
+          <div class="text-center" style="font-family: var(--kanit-font); color: var(--bg-color);">
+            <h1>บรรยากาศของวัดเล่งเน่ยยี่ 2</h1>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-2" style="max-width: 750px; width: 100%;">
+          <div class="video-container">
+            <iframe src="img/wat2/1.mp4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-white" style="background-color: #caced1;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: #C58940; font-family: var(--kanit-font);">วัดสร้อยทอง</h1>
+          <div class="container mapouter"style="background-color:rgba(255,255,255,0.8);" ><div class="gmap_canvas"><iframe width="300" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=วัดสร้อยทอง&t=k&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:300px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:300px;}</style></div></div>
+        </div>
+
+        <div class="col-md-6">
+          <h1 style="color: #C58940; font-family: var(--kanit-font);">วัดเล่งเน่ยยี่ 2</h1>
+          <div class="container mapouter"style="background-color:rgba(255,255,255,0.8);" ><div class="gmap_canvas"><iframe width="300" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=วัดเล่งเน่ยยี่ 2&t=k&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:300px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:300px;}</style></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <span class="text-decoration-underline">นายสุธี กลั่นธูป, นายพงศธร ศรีพันธ์, นายชนานุวัตร ฉายศรี, นายสหชาติ คงแป้น นายชยธร ธรรมกิจไพโรจน์</span>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('header ul');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('default', window.scrollY > 0)
+    })
+
+    var currentImage = 1;
+    setInterval(function () {
+      currentImage++;
+      if (currentImage > 2) {
+        currentImage = 1;
+      }
+      var heroImage = document.querySelector('.hero-image');
+      heroImage.className = 'hero-image image' + currentImage;
+    }, 10000);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
